@@ -37,4 +37,3 @@
 
 # p find_uniq(ar)
 
-# ruby
