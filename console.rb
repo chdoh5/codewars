@@ -36,3 +36,5 @@
 # ar = [1,1,1,1,0]
 
 # p find_uniq(ar)
+
+# ruby
