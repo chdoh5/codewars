@@ -298,6 +298,16 @@
 //     return max + " " + min
 // }
 
+<<<<<<< HEAD
 // console.log(highAndLow("1 2 3 4 5")) 
 
 kfkfk jjj
+=======
+<<<<<<< HEAD
+// console.log(highAndLow("1 2 3 4 5")) 
+
+kfkfk
+=======
+// console.log(highAndLow("1 2 3 4 5"))
+>>>>>>> c0778387903fe23c763a73fec10401f672a58dbb
+>>>>>>> deb78601655211935f3a73ff2f918d1a9252286e
