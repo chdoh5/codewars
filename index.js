@@ -318,7 +318,7 @@ const descendingOrder = (n) => {
         sorted.unshift(num)
     })
     let num = sorted.join('')
-    console.log(parseInt(num))
+    console.log(parseInt(num)) 
   }
 
 // const descendingOrder = (n) => {
