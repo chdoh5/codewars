@@ -298,16 +298,35 @@
 //     return max + " " + min
 // }
 
-<<<<<<< HEAD
 // console.log(highAndLow("1 2 3 4 5")) 
+// --------------------
 
-kfkfk jjj
-=======
-<<<<<<< HEAD
-// console.log(highAndLow("1 2 3 4 5")) 
+// Your task is to make a function that can take any non-negative integer as a argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
-kfkfk
-=======
-// console.log(highAndLow("1 2 3 4 5"))
->>>>>>> c0778387903fe23c763a73fec10401f672a58dbb
->>>>>>> deb78601655211935f3a73ff2f918d1a9252286e
+// Examples:
+// Input: 42145 Output: 54421
+
+// Input: 145263 Output: 654321
+
+// Input: 123456789 Output: 987654321
+
+const descendingOrder = (n) => {
+    let sorted = []
+    let numArr = n.toString().split('')
+    let newArr = numArr.sort()
+    newArr.map( num => {
+        sorted.unshift(num)
+    })
+    let num = sorted.join('')
+    console.log(parseInt(num))
+  }
+
+// const descendingOrder = (n) => {
+//     let numArr = n.toString().split('')
+//     let newArr = numArr.sort()
+//     let sorted = newArr.reverse()
+//     let num = sorted.join('')
+//     return parseInt(num)
+//   }
+
+  descendingOrder(42145)
