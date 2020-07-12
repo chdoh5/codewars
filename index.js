@@ -310,16 +310,16 @@
 
 // Input: 123456789 Output: 987654321
 
-const descendingOrder = (n) => {
-    let sorted = []
-    let numArr = n.toString().split('')
-    let newArr = numArr.sort()
-    newArr.map( num => {
-        sorted.unshift(num)
-    })
-    let num = sorted.join('')
-    console.log(parseInt(num))  
-  }
+// const descendingOrder = (n) => {
+//     let sorted = []
+//     let numArr = n.toString().split('')
+//     let newArr = numArr.sort()
+//     newArr.map( num => {
+//         sorted.unshift(num)
+//     })
+//     let num = sorted.join('')
+//     console.log(parseInt(num))  
+//   }
 
 // const descendingOrder = (n) => {
 //     let numArr = n.toString().split('')
@@ -329,4 +329,40 @@ const descendingOrder = (n) => {
 //     return parseInt(num)
 //   }
 
-  descendingOrder(42145)
+//   descendingOrder(42145)
+
+// -----------
+
+// Bob is preparing to pass IQ test. The most frequent task in this test is to find out which one of the given numbers differs from the others. Bob observed that one number usually differs from the others in evenness. Help Bob — to check his answers, he needs a program that among the given numbers finds one that is different in evenness, and return a position of this number.
+
+// ! Keep in mind that your task is to help Bob solve a real IQ test, which means indexes of the elements start from 1 (not 0)
+
+// ##Examples :
+
+// iqTest("2 4 7 8 10") => 3 
+
+const iqTest = (numbers)=> {
+    let answer
+    let even = []
+    let odd = []
+    let intArr = []
+    let arr = numbers.split(' ')
+    arr.map( n => {
+        intArr.push(parseInt(n))
+    })
+    intArr.forEach( num => {
+        if (num % 2 === 0 ) {
+            even.push(num)
+        } else {
+            odd.push(num)
+        }
+    })
+    if ( even[1] ) {
+        answer = intArr.findIndex( num => num === odd[0] ) 
+    } else if ( odd[1] ) {
+        answer = intArr.findIndex( num => num === even[0] )
+    }
+    return answer + 1
+  }
+
+  iqTest("1 2 1 1")
