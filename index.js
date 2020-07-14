@@ -341,28 +341,28 @@
 
 // iqTest("2 4 7 8 10") => 3 
 
-const iqTest = (numbers)=> {
-    let answer
-    let even = []
-    let odd = []
-    let intArr = []
-    let arr = numbers.split(' ')
-    arr.map( n => {
-        intArr.push(parseInt(n))
-    })
-    intArr.forEach( num => {
-        if (num % 2 === 0 ) {
-            even.push(num)
-        } else {
-            odd.push(num)
-        }
-    })
-    if ( even[1] ) {
-        answer = intArr.findIndex( num => num === odd[0] ) 
-    } else if ( odd[1] ) {
-        answer = intArr.findIndex( num => num === even[0] )
-    }
-    return answer + 1
-  }
+// const iqTest = (numbers)=> {
+//     let answer
+//     let even = []
+//     let odd = []
+//     let intArr = []
+//     let arr = numbers.split(' ')
+//     arr.map( n => {
+//         intArr.push(parseInt(n))
+//     })
+//     intArr.forEach( num => {
+//         if (num % 2 === 0 ) {
+//             even.push(num)
+//         } else {
+//             odd.push(num)
+//         }
+//     })
+//     if ( even[1] ) {
+//         answer = intArr.findIndex( num => num === odd[0] ) 
+//     } else if ( odd[1] ) {
+//         answer = intArr.findIndex( num => num === even[0] )
+//     }
+//     return answer + 1
+//   }
 
-  iqTest("1 2 1 1")
+//   iqTest("1 2 1 1")
