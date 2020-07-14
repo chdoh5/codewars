@@ -347,7 +347,7 @@
 //     let odd = []
 //     let intArr = []
 //     let arr = numbers.split(' ')
-//     arr.map( n => {
+//     arr.map( n => { 
 //         intArr.push(parseInt(n))
 //     })
 //     intArr.forEach( num => {
